@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kalkulator</string>
+    <string name="simple_calculator">Prosty</string>
+    <string name="advanced_calculator">Zaawansowany</string>
+    <string name="about">O Aplikacji</string>
+    <string name="exit">Wyjście</string>
+    <string name="about_application">Aplikacja umożliwia wykonywanie podstawowych i zaawansowanych obliczeń matematycznych. Oferuje tryb prosty (dodawanie, odejmowanie, mnożenie, dzielenie, zmiana znaku) oraz zaawansowany (funkcje trygonometryczne, logarytmy, procenty, pierwiastki, potęgowanie).</string>
+    <string name="creator">Twórca: Maciej Bartoszewski - 245767</string>
+</resources>

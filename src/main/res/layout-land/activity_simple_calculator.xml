@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".SimpleCalculatorActivity">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:gravity="end"
+        android:text=""
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:textSize="@dimen/displayTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/calculator_grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display">
+
+        <Button
+            android:id="@+id/button_c"
+            android:text="C"
+            style="@style/button3"
+            app:cornerRadius="50dp"/>
+        <Button
+            android:id="@+id/button_ac"
+            android:text="AC"
+            style="@style/button3"
+            app:cornerRadius="50dp"/>
+        <Button
+            android:id="@+id/button_change_sign"
+            android:text="+/-"
+            style="@style/button3"
+            app:cornerRadius="50dp"/>
+        <Button
+            android:id="@+id/button_divide"
+            android:text="/"
+            style="@style/button2"
+            app:cornerRadius="50dp"/>
+
+        <Button
+            android:id="@+id/button_7"
+            android:text="7"
+            style="@style/button1"
+            app:cornerRadius="50dp"/>
+        <Button
+            android:id="@+id/button_8"
+            android:text="8"
+            style="@style/button1"
+            app:cornerRadius="50dp"/>
+        <Button
+            android:id="@+id/button_9"
+            android:text="9"
+            style="@style/button1"
+            app:cornerRadius="50dp"/>
+        <Button
+            android:id="@+id/button_multiply"
+            android:text="*"
+            style="@style/button2"
+            app:cornerRadius="50dp"/>
+
+        <Button
+            android:id="@+id/button_4"
+            android:text="4"
+            style="@style/button1"
+            app:cornerRadius="50dp"/>
+        <Button
+            android:id="@+id/button_5"
+            android:text="5"
+            style="@style/button1"
+            app:cornerRadius="50dp"/>
+        <Button
+            android:id="@+id/button_6"
+            android:text="6"
+            style="@style/button1"
+            app:cornerRadius="50dp"/>
+        <Button
+            android:id="@+id/button_minus"
+            android:text="-"
+            style="@style/button2"
+            app:cornerRadius="50dp"/>
+
+        <Button
+            android:id="@+id/button_1"
+            android:text="1"
+            style="@style/button1"
+            app:cornerRadius="50dp"/>
+        <Button
+            android:id="@+id/button_2"
+            android:text="2"
+            style="@style/button1"
+            app:cornerRadius="50dp"/>
+        <Button
+            android:id="@+id/button_3"
+            android:text="3"
+            style="@style/button1"
+            app:cornerRadius="50dp"/>
+        <Button
+            android:id="@+id/button_plus"
+            android:text="+"
+            style="@style/button2"
+            app:cornerRadius="50dp"/>
+
+        <Button
+            android:id="@+id/button_0"
+            android:text="0"
+            android:layout_columnSpan="2"
+            style="@style/button1"
+            app:cornerRadius="50dp"/>
+        <Button
+            android:id="@+id/button_dot"
+            android:text="."
+            style="@style/button1"
+            app:cornerRadius="50dp"/>
+        <Button
+            android:id="@+id/button_equals"
+            android:text="="
+            style="@style/button2"
+            app:cornerRadius="50dp" />
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
